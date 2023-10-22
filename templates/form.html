@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/form.css " />
+    <title>Formulário de pedido</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <img src="/static/img/logo.png" alt="Logo" />
+        <p>Cartão de Crédito cheio de benefícios e sem anuidade!</p>
+        <img src="/static/img/Card.png " alt="Image" />
+      </div>
+      <div class="right-side">
+        <form id="myForm">
+          <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input
+              type="text"
+              id="cpf"
+              name="cpf"
+              class="cpf"
+              maxlength="9"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="birthDate">Data de nascimeto:</label>
+            <input type="date" id="birthDate" name="birthDate" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="cellphone">Telefone:</label>
+            <input type="tel" id="cellphone" name="cellphone" required />
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/static/js/form.js"></script>
+  </body>
+</html>

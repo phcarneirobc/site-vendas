@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Login</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form method="POST" action="/login">
+        <!-- Esta é uma etiqueta de entrada para o nome de usuário -->
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+
+        <!-- Este é um exemplo de valor de usuário (código Python embutido) -->
+        <p>usuario1</p>
+
+        <!-- Esta é uma etiqueta de entrada para a senha -->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <!-- Este é um exemplo de valor de senha (código Python embutido) -->
+        <p>senha1</p>
+
+        <!-- Aqui, verificamos se há uma mensagem de erro (código Python embutido) -->
+        {% if mensagem %}
+            <p style="color: red;">{{ mensagem }}</p>
+        {% endif %}
+
+        <!-- Este é o botão de envio do formulário -->
+        <input type="submit" value="Entrar">
+    </form>
+</body>
+</html>
